@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut" href="#">
+        <meta name="viewport" content="width=device-width, initial-sacale=1.0">
+        <link rel="stylesheet" href="Estilos CSS/Estilos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+        <title>Organización de eventos</title>
+        <!--<link href="https://vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">-->
+        <!--<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>-->
+        <link rel="stylesheet" href="Estilos CSS/video-js.min.css">
+        <script src="JavaScript/video.min.js"></script>
+
+    </head>
+    <body>
+        <!-----------------------------Header; Logo, nombre, menu----------------------------->
+        
+        <header>
+            <div class="contenedor">
+                <img class="logotipo" src="img/Logo.icon" alt="Logo de la empresa" title="Logo de la empresa" width="47" class="imagen">
+                <h1>Organización de eventos</h1>
+                <nav>
+                    <a href="PagPrincipal.html" class="activo">Inicio</a>
+                    <a href="#" >Eventos</a>
+                    <a href="#" >Sobre el club</a>
+                    <a href="#" >Opiniones</a>
+                </nav>
+            </div>
+        </header>
+        <div class="encabezado">
+
+        </div>
+        <!----------------------------------Contenido general---------------------------------->
+        <main>
+            <div class="contenedor">
+                <div class="nombre">Habana Rosales Jennifer 2º2</div>
+                <div class="separacion">
+                    <!--Espacio de separacion en blanco-->
+                </div>
+                <h2 class="titulo">Creación de cualquier tipo de evento Objetivo</h2>
+                <p class="p1">En esta empresa por decirlo así lo que hacemos es organizar eventos de cualquier tipo con tus ideas para que te sientas más agusto organizamos desde aniversarios hasta fiestas infantiledinfantilinfantilesinfantiles</p>
+                <div class="separacion">
+                    <!--Espacio de separacion en blanco-->
+                </div>
+                <img loading="lazy" src="img/Imagen1.jpg" width="70%" alt="Evento uno" >
+                <div class="descripcion1">
+                    <p class="descripcion">Y no solo realizamos el evento también seleccionamos las invitaciones los arreglos la música el equipo de video y sonido la comida y todo lo que se te ocurra con tal de ver feliz al cliente </p>
+                </div>
+                <div class="separacion">
+                    <!--Espacio de separacion en blanco-->
+                </div>
+
+                <!--Videos con la ayuda de la libreria (VideoJS)-->
+                <div class="videos">
+                    <div class="video1">
+                        <video controls class="fm-video1 video-js vjs-big-play-centered" data-setup="{}" id="fm-video">
+                            <source src="videos/Gatito.mp4" type="video/mp4">
+                        </video>
+                        
+                    </div>
+                </div>    
+            </main>
+
+        <!--Script correspondiente al reproductor de video-->
+        <script>
+            var reproductor = videojs('fm-video', {
+                fluid: true
+            });
+        </script>
+    </body>
+</html>
